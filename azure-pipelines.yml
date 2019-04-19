@@ -13,7 +13,7 @@ variables:
   buildConfiguration: 'Debug'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet build
   displayName: 'dotnet build $(buildConfiguration)'
 - task: DotNetCoreCLI@2
   inputs:
